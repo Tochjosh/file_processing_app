@@ -6,12 +6,14 @@ class SpreadSheet:
         self.filename = ''
         self.delimiter = ','
 
+    # file is checked to see if it exists
     def __verify_file_type(self):
         try:
             df = pd.read_csv(self.filename, sep=self.delimiter)
         except FileNotFoundError as err:
             raise err
 
+        # the file type is confirmed here
         self.filetype = self.filename[-4:]
         if self.filetype == '.tsv':
             self.delimiter = '\t'

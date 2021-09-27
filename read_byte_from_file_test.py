@@ -1,5 +1,5 @@
 import unittest
-from readBytesFromFile import ReadBytes
+from read_bytes_from_file import ReadBytes
 
 
 class TestReadBytes(unittest.TestCase):

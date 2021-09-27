@@ -1,6 +1,6 @@
 import unittest
 
-from processSpreadSheet import SpreadSheet
+from process_spread_sheet import SpreadSheet
 
 
 class TestSpreadSheet(unittest.TestCase):
